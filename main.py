@@ -48,8 +48,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_URI')
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
-#'8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
-#'sqlite:///posts.db'
+
 # CONFIGURE TABLES
 class BlogPost(db.Model):
     __tablename__ = "blog_posts"
